@@ -46,6 +46,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,11 +206,21 @@
             this.tbSearch.TabIndex = 33;
             this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(84, 79);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 16);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Search as name";
+            // 
             // FormMasterTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnDelete);
@@ -257,5 +268,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Label label8;
     }
 }

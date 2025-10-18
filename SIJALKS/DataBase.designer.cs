@@ -23,7 +23,7 @@ namespace SIJALKS
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SIJAa")]
-	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
+	public partial class DataBaseDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -38,31 +38,31 @@ namespace SIJALKS
     partial void DeleteTeacher_Table(Teacher_Table instance);
     #endregion
 		
-		public DataClasses1DataContext() : 
-				base(global::SIJALKS.Properties.Settings.Default.SIJAaConnectionString, mappingSource)
+		public DataBaseDataContext() : 
+				base(global::SIJALKS.Properties.Settings.Default.SIJAaConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection) : 
+		public DataBaseDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection) : 
+		public DataBaseDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataBaseDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataBaseDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

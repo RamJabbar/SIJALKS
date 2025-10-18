@@ -44,6 +44,7 @@
             this.cboGender = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,11 +188,21 @@
             this.tbSearch.TabIndex = 21;
             this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(73, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 16);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Search as name";
+            // 
             // FormMasterStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cboGender);
@@ -235,5 +246,6 @@
         private System.Windows.Forms.ComboBox cboGender;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -16,17 +16,17 @@ namespace SIJALKS
         public FormMain(String name) 
         {
             InitializeComponent();
-            this.Name = Name;
+            this.name = name;
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            lblName.Text = $"Welcome, {Name}!";
+            lblName.Text = $"Welcome, {name}!";
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            new Form1().Show(); 
+            new FormLogin().Show(); 
             Hide();
         }
 

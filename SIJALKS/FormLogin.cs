@@ -10,30 +10,26 @@ using System.Windows.Forms;
 
 namespace SIJALKS
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
         public static string name;
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            tbName.Text = "Ram";
-            tbPassword.Text = "Pass123";
-        }
+
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (tbName.Text == "" || tbPassword.Text == "") 
+            if (tbName.Text == "" || tbPassword.Text == "")
             {
                 MessageBox.Show("All fields must be filled");
                 return;
 
             }
 
-            var db = new DataClasses1DataContext();
+            var db = new DataBaseDataContext();
             var user = db.Teacher_Tables
                 .Where(x => x.Name == tbName.Text && x.Password == tbPassword.Text)
                 .FirstOrDefault();
@@ -55,6 +51,13 @@ namespace SIJALKS
             }
 
         }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            tbName.Text = "Ram";
+            tbPassword.Text = "Pass123";
+        }
     }
 }
+
 

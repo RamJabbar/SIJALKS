@@ -12,7 +12,7 @@ namespace SIJALKS
 {
     public partial class FormMasterTeacher : Form
     {
-        DataClasses1DataContext db = new DataClasses1DataContext();
+        DataBaseDataContext db = new DataBaseDataContext();
         int selected_id = -1;
         public FormMasterTeacher()
         {
@@ -88,7 +88,7 @@ namespace SIJALKS
             db.SubmitChanges();
             clearFields();
             showData();
-            MessageBox.Show("Data successfully added");
+            MessageBox.Show("Data successfully Inserted");
             selected_id = -1;
         }
 

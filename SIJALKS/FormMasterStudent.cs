@@ -13,7 +13,7 @@ namespace SIJALKS
 {
     public partial class FormMasterStudent : Form
     {
-        private DataClasses1DataContext db = new DataClasses1DataContext();
+        private DataBaseDataContext db = new DataBaseDataContext();
         int selected_id = -1;
 
         public FormMasterStudent()
@@ -54,7 +54,7 @@ namespace SIJALKS
 
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
-            showDatacbo();
+            showData();
         }
 
         void clearFields()
@@ -89,7 +89,7 @@ namespace SIJALKS
             db.SubmitChanges();
             clearFields();
             showData();
-            MessageBox.Show("Data Successfully Update");
+            MessageBox.Show("Data Successfully Inserted");
             selected_id = -1;
         }
 

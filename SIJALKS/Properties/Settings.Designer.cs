@@ -33,5 +33,16 @@ namespace SIJALKS.Properties {
                 return ((string)(this["SIJAaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-O58GCCN;Initial Catalog=SIJAa;Integrated Security=True;Encryp" +
+            "t=True;TrustServerCertificate=True")]
+        public string SIJAaConnectionString1 {
+            get {
+                return ((string)(this["SIJAaConnectionString1"]));
+            }
+        }
     }
 }
